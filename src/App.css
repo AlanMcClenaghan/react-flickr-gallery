@@ -24,7 +24,7 @@ a {
 }
 
 .search-form {
-  max-width: 460px;
+  width: 90%;
   display: flex;
   margin: 0 auto 32px;
 }
@@ -51,8 +51,10 @@ input {
 }
 
 .main-nav li {
-  width: 100%;
+  width: 90%;
+  margin: auto;
   margin-bottom: 1em;
+
 }
 
 .main-nav a {
@@ -136,4 +138,9 @@ input {
     margin: 10px;
     width: 100px;
   }
+
+  .search-form {
+    max-width: 460px;
+  }
+
 }
