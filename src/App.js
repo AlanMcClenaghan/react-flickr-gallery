@@ -11,6 +11,7 @@ import {
 } from 'react-router-dom';
 
 // Import Components
+import Container from './Components/Container'
 import SearchForm from './Components/Navigation/SearchForm'
 import Cats from './Components/Navigation/Cats'
 import Dogs from './Components/Navigation/Dogs'
@@ -30,9 +31,9 @@ const App = () => (
       <div className="container">
         <Switch>
           <Route exact path="/" render={ () => (<SearchForm />)} />
-          <Route path="/cats" render={ () => (<Cats query={"cats"} />) } />
-          <Route path="/dogs" render={ () => (<Dogs query={"dogs"} />)} />
-          <Route path="/computers" render={ () => (<Computers query={"computers"} />)} />
+          <Route exact path="/cats" render={ () => (<Cats query={"cats"} />) } />
+          <Route exact path="/dogs" render={ () => (<Dogs query={"dogs"} />)} />
+          <Route exact path="/computers" render={ () => (<Computers query={"computers"} />)} />
           <Route component={PageNotFound} />
         </Switch>
         <nav/ >

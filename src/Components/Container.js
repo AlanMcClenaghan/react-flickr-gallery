@@ -75,7 +75,7 @@ class Container extends Component {
     // The PhotoList is rendered with the photo data and query state passed to the Component via props
   render() {
     return (
-          <div className="container">
+          <div className="container">        
               <div className="photo-container">
                 {
                   (this.state.loading)
