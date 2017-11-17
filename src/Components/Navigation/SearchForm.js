@@ -9,7 +9,7 @@ export default class SearchForm extends Component {
 
   // Sets a default Search State so that photos load when the browser is opened.
   state = {
-    query: 'cats'
+    query: 'Search'
   }
 
   // Sets the Search state to the value of the search form input
@@ -45,6 +45,7 @@ export default class SearchForm extends Component {
           </button>
         </form>
         <Nav />
+        <h2>{this.state.query}</h2>
         <Container query={this.state.query} api={this.props.api} />
       </div>
     );

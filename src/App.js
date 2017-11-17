@@ -11,7 +11,6 @@ import {
 } from 'react-router-dom';
 
 // Import Components
-import Container from './Components/Container'
 import SearchForm from './Components/Navigation/SearchForm'
 import Cats from './Components/Navigation/Cats'
 import Dogs from './Components/Navigation/Dogs'

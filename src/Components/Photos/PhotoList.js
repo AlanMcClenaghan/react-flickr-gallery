@@ -12,8 +12,6 @@ import NoPhotos from './NoPhotos';
 const PhotoList = props => {
 
   const results = props.data;
-  const query = props.query;
-  let title;
   let photos;
 
   // If the length of the results variable is longer than 0 ...
@@ -21,7 +19,6 @@ const PhotoList = props => {
     // This creates an <li> element using the Photo Component and a template literal is used to add a url and data from props about each photo.
     // Else the NoPhotos Component is return instead.
   if (results.length > 0) {
-    title = <h2>{query}</h2>
     photos = results.map(photo =>
       <Photo url={`https://farm${photo.farm}.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}_m.jpg`} key={photo.id} alt={props.title} /> );
     } else {
@@ -33,7 +30,6 @@ const PhotoList = props => {
     // ... and a <ul> tag into which is inserted the list of photos.
   return(
       <div>
-        {title}
         <ul>
           {photos}
         </ul>
